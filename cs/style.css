@@ -1,0 +1,229 @@
+*,
+html{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-container {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Menyelaraskan elemen secara vertikal */
+    justify-content: space-between; /* Elemen di start dan end */
+}
+
+.li-navbar{
+    list-style-type: none;
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.ul-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* margin-right: 30px; */
+    padding: 0;
+}
+
+.h1-navbar{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.h1-navbar::after{
+    content: "■";
+    color: rgb(204, 0, 255);
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-tiket{
+    background-color: rgb(204, 0, 255);
+    border: none;
+    color: white;
+    width: 150px;
+    height: 100px;
+}
+
+.btn-tiket:hover{
+    background-color: rgb(143, 0, 179);
+}
+
+.a-navbar{
+    text-decoration: none;
+    color: white;
+}
+
+.a-navbar:hover{
+    color: rgb(187, 0, 187);
+}
+
+/* CONTENT */
+.content-container{
+    margin: 0;
+    padding: 0;
+}
+
+.img-content{
+    height: 60%;
+    width: 100%;
+}
+
+.text-overlay{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    background-color: transparent;
+    font-weight: 100;
+}
+
+.text-overlay-line{
+    position: absolute;
+    top: 97%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    background-color: transparent;
+    font-weight: 100;
+}
+
+.text-overlay-line::before{
+    content: "⎯⎯⎯⎯⎯⎯⎯";
+    color: rgb(204, 0, 255);
+    display: inline-block;
+    margin: 10px;
+    font-weight: 10;
+}
+
+.img-content-fb{
+    width: 3%;
+    position: absolute;
+    top: 110%;
+    right: 9%;
+}
+
+.img-content-ig{
+    width: 2.5%;
+    position: absolute;
+    top: 160%;
+    right: 9%;
+}
+
+.img-content-tw{
+    width: 2.5%;
+    position: absolute;
+    top: 210%;
+    right: 9%;
+}
+
+.img-content-in{
+    width: 4%;
+    position: absolute;
+    top: 240%;
+    right: 8.5%;
+}
+
+.content-container-2{
+    height: 2000px;
+    margin-top: 0px;
+    background-color: #C9D1DE;
+    padding: 0;
+    display: flex;
+    align-items: start;
+}
+.h1-content{
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 15%;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+
+.ul-content{
+    display: flex;
+    gap: 5%;
+    color: rgb(204, 0, 255);
+}
+
+.li-content{
+    list-style-type: none;
+}
+
+.li-content-2{
+    list-style-type: none;
+    width: 400px;
+    text-align: start;
+}
+
+.text-right{
+    margin-top: 13%;
+    margin-left: 15%;
+}
+
+.speaker-container{
+    position: absolute;
+    height: 2000px;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    margin-left: 5%;
+    margin-top: 25%;
+}
+
+.speaker-1{
+    background-color: aqua;
+    width: 100%;
+    height: 25%;
+}
+
+.img-karina{
+    width: 23%;
+    height: 70%;
+    margin-top: 6%;
+    display: flex;
+    margin-left: 20%;
+}
+
+.ul-speaker{
+    display: flex;
+    gap: 2%;
+    color: rgb(204, 0, 255);
+    justify-content: center;
+    transform: rotate(90deg);
+    margin-left: -80%;
+    margin-top: -16%;
+}
+
+.li-speaker{
+    list-style-type: none;
+}
+
+.li-speaker-2{
+    list-style-type: none;
+    text-align: start;
+}
