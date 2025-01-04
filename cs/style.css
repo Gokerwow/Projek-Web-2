@@ -196,7 +196,6 @@ html{
 }
 
 .speaker-1{
-    background-color: aqua;
     width: 100%;
     height: 25%;
 }
@@ -227,3 +226,74 @@ html{
     list-style-type: none;
     text-align: start;
 }
+
+.header-speaker-1{
+    margin-left: 55%;
+    margin-top: -15%;
+    width: 300px;
+}
+
+.subheader-speaker-1{
+    display: flex;
+    margin-left: 55%;
+    font-weight: 5;
+    margin-top: 1%;
+}
+
+.paragraph-speaker-1{
+    display: flex;
+    margin-left: 55%;
+    margin-top: 1%;
+    width: 350px;
+    word-spacing: 10px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.follow-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid black; /* Batas luar kotak */
+    border-radius: 8px;
+    border-color: black ;
+    padding: 10px 20px;
+    width: 300px; /* Sesuaikan lebar */
+    justify-content: space-around;
+    margin-left: 55%;
+    margin-top: 2%;
+  }
+  
+  .follow-text {
+    font-size: 18px;
+    color: rgb(204, 0, 255); /* Warna teks */
+    font-weight: 10px;
+    transition: transform 0.3s ease; /* Efek transisi halus */
+  }
+
+  .follow-text:hover{
+    transform: scale(1.4);
+    transition-delay: 5ms ease;
+  }
+  
+  .divider {
+    width: 1px;
+    background-color: black; /* Warna garis pembagi */
+    height: 30px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 20px; /* Jarak antar ikon */
+    transition: transform 0.3s ease; /* Efek transisi halus */
+  }
+  
+  .icon {
+    width: 24px; /* Ukuran ikon */
+    height: 24px;
+    transition: transform 0.3s ease; /* Efek transisi halus */
+  }
+  
+  .icon:hover{
+    transform: scale(1.5);
+    transition-delay: 3ms;
+  }
