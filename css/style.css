@@ -4,6 +4,10 @@ html{
     padding: 0;
 }
 
+body{
+    background-color: black;
+}
+
 .navbar-container {
     position: fixed;
     width: 100%;
@@ -13,6 +17,7 @@ html{
     display: flex;
     align-items: center; /* Menyelaraskan elemen secara vertikal */
     justify-content: space-between; /* Elemen di start dan end */
+    z-index: 1;
 }
 
 .li-navbar{
@@ -130,6 +135,7 @@ html{
     position: absolute;
     top: 160%;
     right: 9%;
+    filter: invert(100%) sepia(84%) saturate(0%) hue-rotate(162deg) brightness(109%) contrast(101%);
 }
 
 .img-content-tw{
@@ -155,6 +161,7 @@ html{
     align-items: start;
     margin-top: -1%;
 }
+
 .h1-content{
     display: flex;
     align-items: center;
@@ -191,17 +198,20 @@ html{
     height: 2000px;
     width: 90%;
     background-color: white;
-    display: flex;
+    /* display: flex; */
     margin-left: 5%;
     margin-top: 25%;
 }
 
+/* SPEAKER 1 */
 .speaker-1{
     width: 100%;
     height: 25%;
+    position: relative; /* Tambahkan ini untuk mendukung posisi absolut */
 }
 
 .img-karina{
+    position: absolute;
     width: 23%;
     height: 70%;
     margin-top: 6%;
@@ -210,13 +220,15 @@ html{
 }
 
 .ul-speaker{
+    position: absolute;
     display: flex;
-    gap: 2%;
+    gap: 5%;
+    margin-top: 25%;
+    width: 300px;
     color: rgb(204, 0, 255);
-    justify-content: center;
+    justify-content: start;
     transform: rotate(90deg);
-    margin-left: -80%;
-    margin-top: -16%;
+    margin-left: -3%;
 }
 
 .li-speaker{
@@ -230,7 +242,7 @@ html{
 
 .header-speaker-1{
     margin-left: 55%;
-    margin-top: -15%;
+    margin-top: 5%;
     width: 300px;
 }
 
@@ -239,16 +251,23 @@ html{
     margin-left: 55%;
     font-weight: 5;
     margin-top: 1%;
+    width: 100%;
 }
 
 .paragraph-speaker-1{
     display: flex;
     margin-left: 55%;
-    margin-top: 1%;
+    margin-top: 5%;
     width: 350px;
     word-spacing: 10px;
     font-size: 18px;
     line-height: 25px;
+}
+
+.desc-speaker-1{
+    position: absolute; 
+    margin-top: 5%;
+    margin-left: 38%;
 }
 
 .follow-container {
@@ -298,3 +317,368 @@ html{
     transform: scale(1.5);
     transition-delay: 3ms;
   }
+
+/* SPEAKER 2 */
+.speaker-2{
+    width: 100%;
+    height: 25%;
+    position: relative; /* Tambahkan ini untuk mendukung posisi absolut */
+}
+
+.img-giselle{
+    position: absolute;
+    width: 23%;
+    height: 70%;
+    margin-top: 6%;
+    display: flex;
+    margin-left: 55%;
+    background-color: black;
+}
+
+.ul-speaker-2{
+    position: absolute;
+    display: flex;
+    gap: 5%;
+    margin-top: 25%;
+    width: 300px;
+    color: rgb(204, 0, 255);
+    justify-content: flex-start;
+    transform: rotate(90deg);
+    margin-left: 75%;
+}
+
+.li-speaker2{
+    list-style-type: none;
+}
+
+.li-speaker2-2{
+    list-style-type: none;
+    text-align: start;
+}
+
+.header-speaker-2{
+    margin-left: 55%;
+    margin-top: 5%;
+    width: 300px;
+}
+
+.subheader-speaker-2{
+    display: flex;
+    margin-left: 55%;
+    font-weight: 5;
+    margin-top: 1%;
+    width: 100%;
+}
+
+.paragraph-speaker-2{
+    display: flex;
+    margin-left: 55%;
+    margin-top: 5%;
+    width: 350px;
+    word-spacing: 10px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.desc-speaker-2{
+    position: absolute; 
+    margin-top: 5%;
+    /* margin-left: 38%; */
+}
+
+/* SPEAKER 3 */
+.speaker-3{
+    width: 100%;
+    height: 25%;
+    position: relative; /* Tambahkan ini untuk mendukung posisi absolut */
+}
+
+.img-winter{
+    position: absolute;
+    width: 23%;
+    height: 70%;
+    margin-top: 6%;
+    display: flex;
+    margin-left: 20%;
+}
+
+.ul-speaker-3{
+    position: absolute;
+    display: flex;
+    gap: 5%;
+    margin-top: 25%;
+    width: 300px;
+    color: rgb(204, 0, 255);
+    justify-content: start;
+    transform: rotate(90deg);
+    margin-left: -3%;
+}
+
+.li-speaker3{
+    list-style-type: none;
+}
+
+.li-speaker3-2{
+    list-style-type: none;
+    text-align: start;
+}
+
+.header-speaker-3{
+    margin-left: 55%;
+    margin-top: 5%;
+    width: 300px;
+}
+
+.subheader-speaker-3{
+    display: flex;
+    margin-left: 55%;
+    font-weight: 5;
+    margin-top: 1%;
+    width: 100%;
+
+}
+
+.paragraph-speaker-3{
+    display: flex;
+    margin-left: 55%;
+    margin-top: 5%;
+    width: 350px;
+    word-spacing: 10px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.desc-speaker-3{
+    position: absolute; 
+    margin-top: 5%;
+    margin-left: 38%;
+}
+
+/* SPEAKER 4 */
+.speaker-4{
+    width: 100%;
+    height: 25%;
+    position: relative; /* Tambahkan ini untuk mendukung posisi absolut */
+}
+
+.img-ningning{
+    position: absolute;
+    width: 23%;
+    height: 70%;
+    margin-top: 6%;
+    display: flex;
+    margin-left: 55%;
+    background-color: black;
+}
+
+.ul-speaker-4{
+    position: absolute;
+    display: flex;
+    gap: 5%;
+    margin-top: 25%;
+    width: 300px;
+    color: rgb(204, 0, 255);
+    justify-content: flex-start;
+    transform: rotate(90deg);
+    margin-left: 75%;
+}
+
+.li-speaker4{
+    list-style-type: none;
+}
+
+.li-speaker4-2{
+    list-style-type: none;
+    text-align: start;
+}
+
+.header-speaker-4{
+    margin-left: 55%;
+    margin-top: 5%;
+    width: 300px;
+}
+
+.subheader-speaker-4{
+    display: flex;
+    margin-left: 55%;
+    font-weight: 5;
+    margin-top: 1%;
+    width: 100%;
+
+}
+
+.paragraph-speaker-4{
+    display: flex;
+    margin-left: 55%;
+    margin-top: 5%;
+    width: 350px;
+    word-spacing: 10px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.desc-speaker-4{
+    position: absolute; 
+    margin-top: 5%;
+    /* margin-left: 38%; */
+}
+
+/* CONTENT -3 */
+.content-container-3{
+    width: 100%;
+    height: 1000px;
+    background-color: #0C1D39;
+    position: relative;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start; /* Menyusun elemen ke kiri */
+    align-items: start; /* Menyusun elemen secara vertikal ke tengah */
+}
+
+.h1-content3{
+    display: flex;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    /* background-color: aqua; */
+    margin-top: 30%;
+    margin-left: 20%;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.ul-content3{
+    display: flex;
+    gap: 5%;
+    color: rgb(204, 0, 255);
+    margin-top: 52%;
+}
+
+.li-content3{
+    list-style-type: none;
+}
+
+.li-content3-2{
+    list-style-type: none;
+    width: 400px;
+    text-align: start;
+}
+
+.text-right3{
+    margin-top: 13%;
+    margin-right: 25%;
+}
+
+.agenda-container{
+    width: 900px;
+    margin-top: 40%;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 15%;
+}
+
+.agenda-item{
+    color: white;
+    display: flex;
+    padding-left: 10%;
+    border-bottom: 2px solid #3A4961;
+    border-width: 1px;
+}
+
+.agenda-time{
+    text-align: left;
+    margin: 20px;
+    display: inline-block;
+    font-size: 28px;
+    border-right: 1px solid #3A4961;
+    padding-right: 40px;
+}
+
+.agenda-text{
+    text-align: left;
+    margin: 20px;
+    display: inline-block;
+    font-size: 28px;
+    padding-left: 0;
+}
+
+.desc-container{
+    position: absolute;
+    height: 200px;
+    width: 70%;
+    background-color: white;
+    margin-top: 69%;
+    margin-left: 15.8%;
+}
+
+.text-desc{
+    display: flex;
+    margin-left: 10%;
+    font-size: 30px;
+    margin-top: 3%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.desc-day{
+    display: inline-block;
+    margin: 20px;
+    font-weight: 50;
+    border-right: 1px solid rgb(204, 0, 255);
+    padding-right: 40px;
+}
+
+.desc-speaker{
+    display: inline-block;
+    margin: 20px;
+    font-weight: 100;
+    border-right: 1px solid rgb(204, 0, 255);
+    padding-right: 40px;
+}
+
+.desc-participant{
+    display: inline-block;
+    margin: 20px;
+    font-weight: 100;
+}
+
+.text-desc2{
+    display: flex;
+    margin-left: 13%;
+    font-size: 7px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.desc-day2{
+    display: inline-block;
+    margin: 20px;
+    font-weight: 10;
+    padding-right: 50px;
+}
+
+.desc-speaker2{
+    display: inline-block;
+    margin: 20px;
+    font-weight: 100;
+    padding-right: 50px;
+}
+
+.desc-participant2{
+    display: inline-block;
+    margin: 20px;
+    font-weight: 100;
+}
+
+.btn-desc{
+    position: absolute;
+    background-color: rgb(204, 0, 255);
+    border: 1px solid rgb(204, 0, 255);
+    border-radius: 8px;
+    color: white;
+    width: 150px;
+    height: 75px;
+    margin-left: 75%;
+    margin-top: -16%;
+}
