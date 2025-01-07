@@ -8,6 +8,10 @@ body{
     background-color: black;
 }
 
+*:hover{
+    background-color: unset;
+}
+
 .navbar-container {
     position: fixed;
     width: 100%;
@@ -87,6 +91,7 @@ body{
 .img-content{
     height: 60%;
     width: 100%;
+    overflow: hidden;
 }
 
 .text-overlay{
@@ -686,6 +691,10 @@ body{
     margin-top: -16%;
 }
 
+.btn-desc:hover{
+    background-color: rgb(144, 0, 180);
+}
+
 .venue-container{
     height: 750px;
     width: 100%;
@@ -742,6 +751,8 @@ body{
     line-height: 25px;
     margin-top: 30px;
 }
+
+/* SPONSOR */
 
 .sponsor-container{
     background-color: #9013FE;
@@ -812,3 +823,213 @@ body{
     transition: transform 0.3s ease; /* Efek transisi halus */
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 }
+
+/* SUMMARY */
+
+.summary-container{
+    background-color: #0C1D39;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+.ul-summary{
+    padding-top: 8%;
+    display: flex;
+    gap: 5%;
+    width: 60%;
+    height: 20%;
+    padding-right: 10%;
+    border-bottom: 2px solid #3A4961;
+}
+
+.li-summary1{
+    list-style-type: none;
+    color: white;
+    font-size: 40px;
+    width: 60%;
+}
+
+.li-summary2{
+    list-style-type: none;
+    color: rgb(204, 0, 255);
+    padding-top: 10%;
+    font-size: 14px;
+}
+
+.li-summary-2{
+    list-style-type: none;
+    color: rgb(204, 0, 255);
+    padding-top: 10%;
+    width: 60%;
+    font-size: 14px;
+}
+
+.summary-container2{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 70%;
+    border-bottom: 2px solid #3A4961;
+}
+
+.text-summary{
+    list-style-type: none;
+    display: flex;
+    color: white;
+    gap: 15%;
+    font-size: 27px;
+    margin-top: 35%;
+    /* position: relative;
+    margin-top: 60%;
+    top: 310px;
+    right: 35%; */
+}
+
+.text-summary2{
+    list-style-type: none;
+    display: flex;
+    color: white;
+    gap: 5%;
+    margin-top: 20px;
+    padding-bottom: 70px;
+    /* position: relative;
+    right: 35%; */
+    /* margin-top: 40%; */
+}
+
+.summary-word{
+    width: 150px;
+    color: #73818F;
+}
+
+.btn-summary{
+    position: absolute;
+    background-color: rgb(204, 0, 255);
+    border: 1px solid rgb(204, 0, 255);
+    border-radius: 8px;
+    color: white;
+    width: 150px;
+    height: 75px;
+    margin-left: 75%;
+    margin-top: 35%;
+}
+
+.btn-summary:hover{
+    background-color: rgb(143, 0, 179);
+}
+
+.contact-container{
+    position: absolute;
+    height: 35%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 37%;
+    color: white;
+}
+
+.header-contact{
+    margin-top: 8%;
+    font-size: 24px;
+}
+
+.subheader-contact{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #73818F;
+    font-weight: 100;
+}
+
+.form-contact-us{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content; /* atau width yang spesifik sesuai kebutuhan */
+    height: fit-content;
+    gap: 5px;
+}
+
+.label-form{
+    font-weight: 100;
+    color: #f7f5ee;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.input-form{
+    width: 280px;
+    height: 30px;
+    background-color: transparent;
+    border : 1px solid white;
+    border-radius: 6px;
+    color: white;
+    box-sizing: border-box;
+    padding: 0;
+    position: relative
+}
+
+.input-form:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-submit{
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    background-color: transparent;
+    border : 1px solid white;
+    border-radius: 6px;
+    color: white;
+    margin-top: 23px;
+    margin-left:35%;
+    transition: background-color 0.3s ease; /* Efek transisi halus */
+
+}
+
+.btn-submit:hover{
+    background-color: rgb(204, 0, 255);
+}
+
+.input-form:focus {
+    background-color: transparent; /* atau warna lain yang diinginkan */
+    outline: none; /* opsional, menghilangkan outline default browser */
+}
+
+.icon-fb{
+    width: 28px; /* Ukuran ikon */
+    height: 28px;
+    transition: transform 0.3s ease; /* Efek transisi halus */
+}
+
+.icon-ig{
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease; /* Efek transisi halus */
+    filter: invert(100%) sepia(84%) saturate(0%) hue-rotate(162deg) brightness(109%) contrast(101%);
+
+}
+
+.icon-tw{
+    margin-top: 5px;
+    margin-left: 9px;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease; /* Efek transisi halus */
+}
+
+.icon-in{
+    margin-top: -6px;
+    margin-left: -5px;
+    width: 43px;
+    height: 43px;
+}
+
+.social-icons2 {
+    display: flex;
+    gap: 10px; /* Jarak antar ikon */
+    margin-left: 70%;
+    margin-top: -20px;
+  }

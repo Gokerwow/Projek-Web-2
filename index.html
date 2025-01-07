@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
 
@@ -15,7 +16,7 @@
             <ul class="ul-navbar">
                 <div class="navbar-right" style="display: flex;">
                     <li class="li-navbar">
-                        <a class="a-navbar" href="#">Home</a>
+                        <a class="a-navbar" href="#">Home</adata-aos="fade-right">
                     </li>
                     <li class="li-navbar">
                         <a class="a-navbar" href="Speakers.html">Speakers</a>
@@ -42,7 +43,7 @@
         <div class="content container">
             <!-- CONTENT 1 -->
             <img src="assets/background1.jpg" alt="" class="img-content"/>
-            <h1 class="text-overlay">Tech. Innovation Conference 2035</h1>
+            <h1 class="text-overlay" >Tech. Innovation Conference 2035</h1>
             <h1 class="text-overlay-line">Stay Ahead of the Industry</h1>
         </div>
         <!-- CONTENT 2 -->
@@ -58,7 +59,7 @@
             <div class="speaker-container">
                 <!-- SPEAKER 1 -->
                 <div class="speaker-1">  
-                    <img src="assets/karina aespa.jpg" alt="" class="img-karina">
+                    <img src="assets/karina aespa.jpg" alt="" class="img-karina" data-aos="fade-right">
                     <ul class="ul-speaker">
                         <li class="li-speaker">01</li>
                         <li class="li-speaker">⎯⎯⎯⎯⎯⎯⎯</li>
@@ -80,7 +81,7 @@
                 </div>
                 <!-- SPEAKER 2 -->
                 <div class="speaker-2">  
-                    <img src="assets/giselle.jpg" alt="" class="img-giselle">
+                    <img src="assets/giselle.jpg" alt="" class="img-giselle" data-aos="fade-left">
                     <ul class="ul-speaker-2">
                         <li class="li-speaker2">01</li>
                         <li class="li-speaker2">⎯⎯⎯⎯⎯⎯⎯</li>
@@ -103,7 +104,7 @@
                 </div>
                     <!-- SPEAKER 3 -->
                 <div class="speaker-3">  
-                    <img src="assets/winter.jpg" alt="" class="img-winter">
+                    <img src="assets/winter.jpg" alt="" class="img-winter" data-aos="fade-right">
                     <ul class="ul-speaker-3">
                         <li class="li-speaker3">01</li>
                         <li class="li-speaker3">⎯⎯⎯⎯⎯⎯⎯</li>
@@ -126,7 +127,7 @@
                 </div>
                     <!-- SPEAKER 4 -->
                     <div class="speaker-4">  
-                        <img src="assets/ningning.jpg" alt="" class="img-ningning">
+                        <img src="assets/ningning.jpg" alt="" class="img-ningning" data-aos="fade-left">
                         <ul class="ul-speaker-4">
                             <li class="li-speaker4">01</li>
                             <li class="li-speaker4">⎯⎯⎯⎯⎯⎯⎯</li>
@@ -222,7 +223,69 @@
                 <img src="assets/nike logo.svg" alt="" class="img-nike">
             </div>
          </div>
+         <!-- CONTENT 7 -->
+         <div class="summary-container">
+            <ul class="ul-summary">
+                <li class="li-summary1">Tech. Innovation Conference 2035</li>
+                <li class="li-summary2">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</li>
+                <li class="li-summary-2">STAY AHEAD OF THE INDUSTRY</li>
+            </ul>
+            <div class="summary-container2">
+                <div class="text-summary">
+                    <li class="summary-number">What</li>
+                    <li class="summary-number">When</li>
+                    <li class="summary-number">Where</li>
+                </div>
+                <div class="text-summary2">
+                    <li class="summary-word">Tech. Innovation
+                        Conference 2035</li>
+                    <li class="summary-word">August 1st, 2035</li>
+                    <li class="summary-word">Kia Forum in Inglewood, CA</li>
+                </div>
+                <button class="btn-summary">buy Tickets</button>
+            </div>
+            <div class="contact-container">
+                <h1 class="header-contact">Contact Us</h1>
+                <h2 class="subheader-contact">To learn more, don’t hesitate to get in touch</h2>
+                <form action="php/action.php" class="form-contact-us">
+                    <label for="contact-us" class="label-form">Your Email Address*</label>
+                    <input type="text" id="contact-us" name="contact-us" class="input-form">
+                    <button class="btn-submit">Submit</button>
+                </form>
+                <div class="social-icons2">
+                    <a href="https://facebook.com/yourpage" target="_blank">
+                        <img src="assets/facebook icon.png" alt="" class="icon-fb">
+                    </a>
+                    <a href="https://instagram.com/yourpage" target="_blank">
+                        <img src="assets/instagram icon.svg" alt="" class="icon-ig">
+                    </a>
+                    <a href="https://twitter.com/yourpage" target="_blank">
+                        <img src="assets/twitter icon.png" alt="" class="icon-tw">
+                    </a>
+                    <a href="https://linkedin.com/company/yourpage" target="_blank">
+                        <img src="assets/linkedin icon.png" alt="" class="icon-in">
+                    </a>
+                </div>
+            </div>
+         </div>
         <!-- CONTENT END -->
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Inisialisasi AOS
+        AOS.init({
+            duration: 1200, // Durasi animasi dalam milidetik
+            once: true, // Animasi hanya dijalankan sekali
+            easing: 'ease-in-out', // Jenis easing
+        });
+        window.addEventListener('scroll', () => {
+            const parallaxElements = document.querySelectorAll('.img-content');
+            parallaxElements.forEach((el, i) => {
+                const speed = 0.5; // Kecepatan parallax
+                const offset = window.scrollY * speed;
+                el.style.transform = `translateY(${offset}px)`;
+            });
+        });
+    </script>
 </body>
 </html>
