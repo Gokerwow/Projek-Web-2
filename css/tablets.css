@@ -1,0 +1,8 @@
+@media only screen and (max-width: 840px) { 
+    .navbar-right {
+        visibility: hidden; /* Cek apakah ini memberikan hasil yang berbeda */
+    }
+    .img-menu{
+        visibility: visible;
+    }
+}

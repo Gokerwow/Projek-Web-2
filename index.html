@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" media="screen and (min-width: 480px)" href="css/tablets.css">
 </head>
 <body>
 
@@ -14,21 +15,48 @@
         <div class="navbar-container">
             <h1 class="h1-navbar">TIC</h1>
             <ul class="ul-navbar">
-                <div class="navbar-right" style="display: flex;">
+                <div class="navbar-right">
+                    <div class="sidebar">
+                        <li class="li-navbar" onclick=hideSidebar()>
+                            <a class="a-navbar">
+                                <img src="assets/close icon.svg" alt="" class="img-close">
+                            </a>
+                        </li>
+                        <li class="li-navbar">
+                            <a class="a-navbar" href="#home">Home</a>
+                        </li>
+                        <li class="li-navbar">
+                            <a class="a-navbar" href="#speakers">Speakers</a>
+                        </li>
+                        <li class="li-navbar">
+                            <a class="a-navbar" href="#agenda">Agenda</a>
+                        </li>
+                        <li class="li-navbar">
+                            <a class="a-navbar" href="#venue">Venue</a>
+                        </li>
+                        <li class="li-navbar">
+                            <a class="a-navbar" href="#contact">Contact</a>
+                        </li>
+                    </div>
                     <li class="li-navbar">
-                        <a class="a-navbar" href="#">Home</adata-aos="fade-right">
+                        <a class="a-navbar" href="#home">Home</adata-aos="fade-right">
                     </li>
                     <li class="li-navbar">
-                        <a class="a-navbar" href="Speakers.html">Speakers</a>
+                        <a class="a-navbar" href="#speakers">Speakers</a>
                     </li>
                     <li class="li-navbar">
-                        <a class="a-navbar" href="Agenda.html">Agenda</a>
+                        <a class="a-navbar" href="#agenda">Agenda</a>
                     </li>
                     <li class="li-navbar">
-                        <a class="a-navbar" href="Venue.html">Venue</a>
+                        <a class="a-navbar" href="#venue">Venue</a>
                     </li>
                     <li class="li-navbar">
-                        <a class="a-navbar" href="Contact.html">Contact</a>
+                        <a class="a-navbar" href="#contact">Contact</a>
+                    </li>
+                    <li onclick=showSidebar()>
+                        <a>
+                            <img src="assets/menu icon.svg" alt="" class="img-menu">
+                        </a>
                     </li>
                     <button class="btn-tiket">Buy Tickets</button>
                     <img src="assets/facebook icon.png" class="img-content-fb">
@@ -40,14 +68,14 @@
         </div>
         <!-- NAVBAR END -->
         <!-- CONTENT -->
-        <div class="content container">
+        <div class="content-container" id="home">
             <!-- CONTENT 1 -->
-            <img src="assets/background1.jpg" alt="" class="img-content"/>
+            <!-- <img src="assets/background1.jpg" alt="" class="img-content"/> -->
             <h1 class="text-overlay" >Tech. Innovation Conference 2035</h1>
             <h1 class="text-overlay-line">Stay Ahead of the Industry</h1>
         </div>
         <!-- CONTENT 2 -->
-        <div class="content-container-2">
+        <div class="content-container-2" id="speakers">
             <h1 class="h1-content">The Speakers</h1>
             <div class="text-right" style="display: flex;">
                 <ul class="ul-content">
@@ -150,7 +178,7 @@
             </div>
         </div>
         <!-- CONTENT 3 -->
-        <div class="content-container-3">
+        <div class="content-container-3" id="agenda">
             <h1 class="h1-content3">Agenda</h1>
             <div class="text-right3" style="display: flex;">
                 <ul class="ul-content3">
@@ -196,8 +224,8 @@
             </div>
         </div>
         <!-- CONTENT 5 -->
-        <div class="venue-container">
-            <img src="assets/venue 2.jpg" alt="" class="img-venue">
+        <div class="venue-container" id="venue">
+            <!-- <img src="assets/venue 2.jpg" alt="" class="img-venue"> -->
             <div class="venue-desc-container">
                 <div class="text-container">
                     <h1 class="header-concert">The Concert</h1>
@@ -210,7 +238,7 @@
             </div>
         </div>
         <!-- CONTENT 6 -->
-         <div class="sponsor-container">
+         <div class="sponsor-container" >
             <ul class="ul-sponsor">
                 <li class="li-sponsor1">Our Sponsors</li>
                 <li class="li-sponsor2">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</li>
@@ -224,7 +252,7 @@
             </div>
          </div>
          <!-- CONTENT 7 -->
-         <div class="summary-container">
+         <div class="summary-container" id="contact">
             <ul class="ul-summary">
                 <li class="li-summary1">Tech. Innovation Conference 2035</li>
                 <li class="li-summary2">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</li>
@@ -278,14 +306,31 @@
             once: true, // Animasi hanya dijalankan sekali
             easing: 'ease-in-out', // Jenis easing
         });
+        const parallaxConfig = {
+            'content-container': 0.7,  // kecepatan untuk background pertama
+            // 'venue-container': 0.5,  // kecepatan untuk background kedua
+        };
+
         window.addEventListener('scroll', () => {
-            const parallaxElements = document.querySelectorAll('.img-content');
-            parallaxElements.forEach((el, i) => {
-                const speed = 0.5; // Kecepatan parallax
-                const offset = window.scrollY * speed;
-                el.style.transform = `translateY(${offset}px)`;
+            // Loop through each parallax class in config
+            Object.entries(parallaxConfig).forEach(([className, speed]) => {
+                const element = document.querySelector(`.${className}`); // Gunakan backticks
+                if (element) {
+                    const offset = window.scrollY * speed;
+                    element.style.backgroundPosition = `center ${offset}px`; // Gunakan backticks
+                }
             });
         });
+
+        function showSidebar(){
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.visibility = 'visible'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.visibility = 'hidden'
+        }
     </script>
 </body>
 </html>
