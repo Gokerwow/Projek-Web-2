@@ -355,10 +355,6 @@ body{
     transition: transform 0.3s ease; /* Efek transisi halus */
   }
 
-  .follow-text:hover{
-    transform: scale(1.4);
-    transition-delay: 5ms ease;
-  }
   
   .divider {
     width: 1px;
@@ -1212,14 +1208,16 @@ body{
         
     .header-speaker-1{
         margin-left: 0;
+        margin-top: 8%;
+        font-weight: 200;
     }
     
     .subheader-speaker-1{
-        display: flex;
+        font-size: 18px;
         margin-left: 0%;
-        font-weight: 5;
-        margin-top: 1%;
+        font-family: 'Times New Roman', Times, serif;
         width: 100%;
+        color: #626d7e;
     }
     
     .paragraph-speaker-1{
@@ -1230,6 +1228,8 @@ body{
         word-spacing: 10px;
         font-size: 18px;
         line-height: 25px;
+        color: #626d7e;
+
     }
     
     .desc-speaker-1{
@@ -1243,7 +1243,7 @@ body{
         top: 0;
         position: absolute;
         margin-left: 30%;
-        margin-top: -60%;
+        margin-top: -65%;
         transform: rotate(90deg);
       }
       
@@ -1253,34 +1253,7 @@ body{
         font-weight: 10px;
         transition: transform 0.3s ease; /* Efek transisi halus */
       }
-    
-      .follow-text:hover{
-        transform: scale(1.4);
-        transition-delay: 5ms ease;
-      }
-      
-      .divider {
-        width: 1px;
-        background-color: black; /* Warna garis pembagi */
-        height: 30px;
-      }
-      
-      .social-icons {
-        display: flex;
-        gap: 20px; /* Jarak antar ikon */
-        transition: transform 0.3s ease; /* Efek transisi halus */
-      }
-      
-      .icon {
-        width: 24px; /* Ukuran ikon */
-        height: 24px;
-        transition: transform 0.3s ease; /* Efek transisi halus */
-      }
-      
-      .icon:hover{
-        transform: scale(1.5);
-        transition-delay: 3ms;
-      }
+
     /* SPEAKER 2 */
       .speaker-2{
         width: 100%;
@@ -1306,16 +1279,21 @@ body{
     
     .header-speaker-2{
         margin-left: 0%;
-        margin-top: 5%;
+        margin-top: 8%;
         width: 300px;
+        font-weight: 200;
     }
     
     .subheader-speaker-2{
         margin-left: 0%;
         width: 100%;
+        font-size: 18px;
+        color: #626d7e;
+        font-family: 'Times New Roman', Times, serif;
     }
     
     .paragraph-speaker-2{
+        font-size: 18px;
         display: flex;
         margin-left: 0%;
         margin-top: 5%;
@@ -1323,6 +1301,8 @@ body{
         word-spacing: 10px;
         font-size: 18px;
         line-height: 25px;
+        color: #626d7e;
+
     }
     
     .desc-speaker-2{
@@ -1336,7 +1316,7 @@ body{
         top: 0;
         position: absolute;
         margin-left: -30%;
-        margin-top: -60%;
+        margin-top: -65%;
         transform: rotate(-90deg);
       }
 
@@ -1364,16 +1344,19 @@ body{
     
     .header-speaker-3{
         margin-left: 0%;
-        margin-top: 5%;
+        margin-top: 8%;
         width: 300px;
+        font-weight: 200;
     }
     
     .subheader-speaker-3{
-        display: flex;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
         margin-left: 0%;
         font-weight: 5;
         margin-top: 1%;
         width: 100%;
+        color: #626d7e;
     }
     
     .paragraph-speaker-3{
@@ -1384,6 +1367,7 @@ body{
         word-spacing: 10px;
         font-size: 18px;
         line-height: 25px;
+        color: #626d7e;
     }
     
     .desc-speaker-3{
@@ -1397,7 +1381,7 @@ body{
         top: 0;
         position: absolute;
         margin-left: 30%;
-        margin-top: -60%;
+        margin-top: -65%;
         transform: rotate(90deg);
       }
     /* SPEAKER 4 */
@@ -1425,17 +1409,17 @@ body{
     
     .header-speaker-4{
         margin-left: 0%;
-        margin-top: 5%;
+        margin-top: 8%;
         width: 300px;
+        font-weight: 200;
     }
     
     .subheader-speaker-4{
-        display: flex;
+        font-size: 18px;
         margin-left: 0%;
-        font-weight: 5;
-        margin-top: 1%;
+        font-family: 'Times New Roman', Times, serif;
         width: 100%;
-    
+        color: #626d7e;
     }
     
     .paragraph-speaker-4{
@@ -1446,6 +1430,8 @@ body{
         word-spacing: 10px;
         font-size: 18px;
         line-height: 25px;
+        color: #626d7e;
+
     }
     
     .desc-speaker-4{
@@ -1459,7 +1445,7 @@ body{
         top: 0;
         position: absolute;
         margin-left: -30%;
-        margin-top: -60%;
+        margin-top: -65%;
         transform: rotate(-90deg);
       }
     
